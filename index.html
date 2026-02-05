@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Question importante</title>
+    <style>
+        body {
+            background-color: #ffe6f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #e60073;
+        }
+        button {
+            font-size: 1.5em;
+            padding: 15px 30px;
+            margin: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #yes {
+            background-color: #ff4d94;
+            color: white;
+        }
+        #no {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Mon chouchoubidou d'amour, veux tu être ma valentine le 14 février 2026 ? </h1>
+
+<button id="yes" onclick="yes()">OUI JE LE VEUX</button>
+<button id="no" onclick="no()">Non tu me dégoutes mon frr...</button>
+
+<script>
+    function yes() {
+        document.body.innerHTML = `
+            <h1 style="color:#e60073;">J'espère bien nan mais oh sinon je serais même pas venu.</h1>
+            <p style="font-size:1.5em;">Je t'aime fort <3</p>
+            <img src="nous.jpg" 
+                 alt="Nous deux les plus bg du monde"
+                 style="width:600px; border-radius:20px; box-shadow:0 10px 20px rgba(0,0,0,0.2); margin-top:20px;">
+        `;
+    }
+
+    function no() {
+        alert("Réfléchis encore un peu stp...");
+    }
+</script>
+
+</body>
+</html>
